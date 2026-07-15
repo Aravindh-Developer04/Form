@@ -36,15 +36,22 @@
                 type="email"
                 placeholder="Enter your Gmail"
                 required>
-            
+            <small class="error">Please enter a valid email address.</small>
          
 
-            <label>Password</label>
-            <input type="password"
-            minlength="4"
-            maxlength="8"
-            placeholder="Enter your password">
-
+         <div class="input-group">
+    <label>Password</label>
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        minlength="8"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
+        required>
+    <small class="error">
+        Password must be at least 8 characters and include uppercase, lowercase, number and special character.
+    </small>
+</div>
             <div class="options">
                 <div>
                     <input type="checkbox">
