@@ -143,3 +143,56 @@ input:focus{
     width:100%;
     height:100%;
 }
+/* Mobile Responsive */
+@media screen and (max-width: 768px){
+
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .left,
+    .right{
+        width: 100%;
+    }
+
+    .left{
+        padding:20px;
+    }
+
+    .right{
+        display:none;   /* Hide image on mobile */
+    }
+
+    .form-box{
+        width:100%;
+    }
+
+    .form-box h1{
+        font-size:35px;
+    }
+
+    input{
+        width:100%;
+        font-size:16px;
+        padding:12px;
+    }
+
+    .login-btn,
+    .google-btn{
+        width:100%;
+    }
+
+    .options{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        align-items:flex-start;
+    }
+
+    .error{
+        font-size:14px;
+        word-break:break-word;
+    }
+}
