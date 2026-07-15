@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ececec;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:1200px;
+    height:700px;
+    background:#fff;
+    display:flex;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.left{
+    width:50%;
+    padding:40px 70px;
+    background:#fff;
+}
+
+.logo{
+    margin-bottom:60px;
+    margin-top: 10px;
+}
+
+.logo h2{
+    font-size:32px;
+}
+
+.form-box{
+    width:100%;
+}
+
+.form-box h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.form-box p{
+    color:gray;
+    margin-bottom:40px;
+}
+
+label{
+    display:block;
+    margin:20px 0 8px;
+    font-weight:bold;
+}
+
+input[type=email],
+input[type=password]{
+    width:100%;
+    height:55px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+    transition:.3s;
+}
+
+input:focus{
+    outline:none;
+    border-color:#6c4ccf;
+    box-shadow:0 0 10px rgba(108,76,207,.3);
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:25px 0;
+}
+
+.options a{
+    color:#6c4ccf;
+    text-decoration:none;
+}
+
+.login-btn{
+    width:100%;
+    height:55px;
+    background:#6c4ccf;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#5537b5;
+
+}
+
+.google-btn{
+    width:100%;
+    height:55px;
+    margin-top:20px;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.google-btn i{
+    color:red;
+    margin-right:10px;
+}
+
+.signup{
+    text-align:center;
+    margin-top:30px;
+}
+
+.signup a{
+    color:#6c4ccf;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.right{
+    width: 50%;
+    background:linear-gradient(135deg,#8d63ff,#b894ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right img{
+    width:100%;
+    height:100%;
+}
